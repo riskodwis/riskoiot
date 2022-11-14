@@ -1,6 +1,9 @@
 function data(req, res) {
   let x = req.params;
 
-  res.send(x * 10);
+  let hasil = parseInt(x.parameter) * 10;
+  console.log(hasil);
+
+  res.status(200).json(hasil);
 }
 module.exports = data;
